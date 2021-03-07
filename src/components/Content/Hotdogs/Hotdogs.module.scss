@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.hotdog {
+  padding: 4px;
+}
+
+.image,
+.name,
+.description,
+.price {
+  padding: 2px;
+  margin: 2px;
+}
+
+.image {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.edit {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: #000;
+  color: #fff;
+}

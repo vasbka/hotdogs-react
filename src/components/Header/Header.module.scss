@@ -1,0 +1,51 @@
+.header {
+    height: 4vh;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000080;
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+}
+
+.img {
+    object-fit: contain;
+    height: 50%;
+    margin-right: 10px;
+}
+
+.span {
+    color: #fff;
+    background: #0c1723cf;
+    font-size: 12px;
+    padding: 6px;
+}
+
+.button {
+    outline: none;
+    border: none;
+    background: #fff;
+    display: flex;
+    margin-left: auto;
+    align-self: flex-start;
+    transition: 1s;
+    margin-right: 16px;
+
+    &:hover {
+        cursor: pointer;
+        background: #123;
+        color: #fff;
+    }
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.dBlock {
+    display: block;
+}
+
+.dNone {
+    display: none;
+}
