@@ -4,6 +4,7 @@ import asyncValidate from './AsyncValidate.js'
 import validate from './Validate'
 import styles from './Form.module.scss'
 import * as axios from "axios";
+const {REACT_APP_SERVER_API_URL} = process.env;
 
 const renderField = ({
      input,
@@ -27,7 +28,7 @@ const renderField = ({
 
 
 const addNewHotDog = (hotDog, createNewHotDog) => {
-    axios.post("http://localhost:5000/api/hot-dogs", {
+    axios.post(`${REACT_APP_SERVER_API_URL}/api/hot-dogs`, {
         name: hotDog.name,
         description: hotDog.description,
         price: hotDog.price,
